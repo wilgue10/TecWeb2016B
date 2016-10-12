@@ -19,7 +19,7 @@
 ## Imagenes
 para nosotros utilizar imagenes debemos de colocar un texto alternativo despues del caracter de exclasion ! y el link de la imagen entre parentesis ()
  
-![Imagne](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAkJ8HefF0QPFYxh_ws44sOOFunJZdwKcnrNGM1Xc64JegZfvkjpYzZnFJ)
+![Imagen](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAkJ8HefF0QPFYxh_ws44sOOFunJZdwKcnrNGM1Xc64JegZfvkjpYzZnFJ)
 ## Para nosotros utilizar el formateo de  dentro de texto plano debemos utilizar el caracter tilde invertida  ""
 Inline `code` has `back-ticks around` it.
 
@@ -27,4 +27,11 @@ para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar 
 ```javascript
 var mensaje = "Hola mundo ";
 alert(mensaje);
+```
+* Bloque de HTML
+
+```
+<html>
+  
+</html>
 ```
