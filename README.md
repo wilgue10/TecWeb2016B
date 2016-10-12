@@ -35,3 +35,12 @@ alert(mensaje);
   
 </html>
 ```
+
+## Tablas
+para usar tablas necesitamos definir las filas con "|"
+
+| columna 1        | columna 2         | Columna 3  | 
+| ------------- |:-------------:| -----:|
+| valor1 c1     |valor1 c2 | valor1 c3 |
+| valor2 c1    |    valor1 c2   |   valor1 c3  |
+| valor3 c1 |    valor1 c2    |   valor1 c3   |
