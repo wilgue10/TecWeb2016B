@@ -95,7 +95,7 @@ Se pueden usar imágenes desde nuestros archivos en github que constan de la sig
 #### `https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true`
 
 <p align="center">
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2000px-Node.js_logo.svg.png" width="500" height="800">
 </p>
 
 Por ultimo podemos centrar las imagenes de la siguiente manera:
@@ -131,11 +131,11 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 ## Conclusiones y Recomendaciones
 
-- Se recomienda mejorar la presentacion
-- Se recomienda usar el ir a cabecera despues de terminar una seccion
-- Se aprendio el uso de HTML con Markdown
-- Conocimos herramientas de desarrollo web como postman e inspector web
-- Desarrollamos conocimientos de introducción Web
+- Se recomienda practicar con los comandos aprendidos para su correcta manipulación.
+- Se recomienda usar tutoriales para un buen aprendizaje.
+- Se aprendio el uso de HTML con Markdown.
+- Conocimos herramientas de desarrollo web como postman e inspector web.
+- Desarrollamos conocimientos de la tecnología web.
 
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -143,5 +143,5 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 # ¡Gracias por su atención!
 
-Author: [Adrian Eguez](https://github.com/adrianeguez)# Introducción a la Web
+Author: [Wilmer Guevara](https://github.com/wilgue10)# Introducción a la Web
 
