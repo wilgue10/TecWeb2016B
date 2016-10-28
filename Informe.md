@@ -1,6 +1,3 @@
-# Ejemplo de informe
-
-El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo que interesa es la estructura.
 
 # Introducción a la Web
 
