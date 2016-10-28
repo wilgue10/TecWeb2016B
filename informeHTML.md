@@ -102,10 +102,10 @@ Se pueden usar imágenes desde nuestros archivos en github que constan de la sig
   
 **Al final** nuestro url queda de la siguiente manera:
 
-#### `https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true`
+#### 
 
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2000px-Node.js_logo.svg.png" width="500" height="800">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/master/Nueva%20carpeta/Node.js_logo.svg.png" width="500" height="800">
 </p>
 
 Por ultimo podemos centrar las imagenes de la siguiente manera:
@@ -114,7 +114,7 @@ Por ultimo podemos centrar las imagenes de la siguiente manera:
 ```
 <p align="center">
 
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/master/Nueva%20carpeta/Node.js_logo.svg.png" width="500" height="800">
 
 </p>
 ```
