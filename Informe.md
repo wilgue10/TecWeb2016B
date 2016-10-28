@@ -1,4 +1,3 @@
-
 # Introducción a la Web
 
 ### Materia : `Tecnologías Web con JavaScript`
@@ -9,7 +8,7 @@
 
 ### Tema : `Introducción a la Web` 
 ### Fecha : `2016-10-28`
-### Estudiante : `Vicente Adrian Eguez Sarzosa`
+### Estudiante : `Wilmer Vinicio Guevara Farinango`
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `1`
 
@@ -144,4 +143,5 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 # ¡Gracias por su atención!
 
-Author: [Adrian Eguez](https://github.com/adrianeguez)
+Author: [Adrian Eguez](https://github.com/adrianeguez)# Introducción a la Web
+
