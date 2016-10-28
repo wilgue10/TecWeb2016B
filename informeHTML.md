@@ -46,7 +46,7 @@ texto electrónico independiente de dispositivos, sistemas y aplicaciones.
 Metalenguaje para definir lenguajes de diseño descriptivos; proporciona
 un medio de codificar documentos hipertexto cuyo destino sea el intercambio
 directo entre sistemas o aplicaciones.
- (Fuente: [Wikipedia](http://www.asptutor.com/zip/cbhtml.pdf))
+ (Fuente: [PDF](http://www.asptutor.com/zip/cbhtml.pdf))
 <br>
 <a href="#cabecera">A la cabecera</a>
 
