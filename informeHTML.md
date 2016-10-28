@@ -65,7 +65,17 @@ navegadores o browsers) que son manejados por el usuario final.
 Además, este software cliente, por ser más moderno, tiene la
 peculiaridad de que es capaz de entenderse con otro tipo de servicios o protocolos,
 como son ftp, news, gopher..., de manera que sólo hace falta un programa para utilizar
-todos los servicios disponibles en la red.  (Fuente: <a href="http://www.edificacion.upm.es/informatica/documentos/www.pdf">Wikipedia</a>)
+todos los servicios disponibles en la red. 
+
+Otra característica de las páginas Web es la utilización del hipertexto. Por
+hipertexto se entiende cualquier texto que incluye un enlace o salto a otra zona de la
+misma página o en otra página distinta localizada incluso en otro servidor. Un enlace
+también puede estar asociado a una imagen o a un icono. El hipertexto suele aparecer
+subrayado y en un color diferente al resto del texto para destacarlo. En los navegadores
+actuales tan sólo se tiene que hacer un clic con el ratón sobre el enlace para cargar
+automáticamente el elemento referenciado
+
+(Fuente: <a href="http://www.edificacion.upm.es/informatica/documentos/www.pdf">Wikipedia</a>)
 <br>
 <a href="#cabecera">A la cabecera</a>
 
