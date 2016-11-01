@@ -140,28 +140,57 @@ O utilizando la etiqueta @IMPORT
 <a name="desarrollo"></a>
 
 
-
-
-
-
 ## Desarrollo del informe
 
-### Imagenes desde Github **IMPORTANTE**
+### Código HTML y tags CSS
 
-Se pueden usar imágenes desde nuestros archivos en github que constan de la siguiente URL:
+se derrollo el siguiente ejempo:
+```
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo CSS</title>
+    <style>
+        
+        /*        
+        //TAGS
+        nombreTag{ 
+            Propiedad1:valorPropiedad1;
+            Propiedad2:valorPropiedad2;
+            Propiedad3:valorPropiedad3;
+        }
+        
+        */
+        
+        html{
+            background-color: #687fd4;
+        }
+        body{
+            background-color: #6df311;
+        }
+        h1{
+            background-color: #a2b42b;
+        }
+        
+        
+        
+/*        nombrePropuiedad:valorPropiedad; */
+    
+    
+    </style>
+</head>
+```
 
-- Github
-  * La url de github que es `https://github.com` 
-- Usuario
-  * La url de usuario de github que en este caso es: `/wilgue10` 
-- Repositorio
-  * El repositorio de Github que estamos usando, en este caso es `/TecWeb2016`
-- Rama o  Branch
-  * La rama de nuestro repositorio en este formato: `/blob/master`
-- El PATH
-  * La direccíon de nuesto archivo por ejemplo `/carpeta/subcarpeta/subsubcarpeta/archivo.png` en este ejemplo es `/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png` 
-- RAW
-  * Por ultimo mandamos un Query String Parameter de la con la variable `raw` y valor `true` de la siguiente manera: `?raw=true`
+<body>
+
+    <h1>Hola</h1>
+    <p>Parrafo</p>
+    <h1>Amigos</h1>
+    <p>Parrafo 2</p>
+    <h1>Politecnicos</h1>
+    <p>Parrafo 3</p>
+
+</body>
+
   
 **Al final** nuestro url queda de la siguiente manera:
 
