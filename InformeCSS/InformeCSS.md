@@ -144,23 +144,11 @@ O utilizando la etiqueta @IMPORT
 
 ### Código HTML y tags CSS
 
-se derrollo el siguiente ejempo:
+1.se derrollo el siguiente ejempo:
 ```
-<head>
-    <meta charset="UTF-8">
-    <title>Aprendiendo CSS</title>
     <style>
         
-        /*        
-        //TAGS
-        nombreTag{ 
-            Propiedad1:valorPropiedad1;
-            Propiedad2:valorPropiedad2;
-            Propiedad3:valorPropiedad3;
-        }
-        
-        */
-        
+
         html{
             background-color: #687fd4;
         }
@@ -170,15 +158,17 @@ se derrollo el siguiente ejempo:
         h1{
             background-color: #a2b42b;
         }
-        
-        
-        
-/*        nombrePropuiedad:valorPropiedad; */
-    
     
     </style>
-</head>
 ```
+2.Creacion De clases
+```
+CLASES
+        .nombreClase{
+            //estilos
+        }
+```
+
 
 <body>
 
@@ -192,12 +182,12 @@ se derrollo el siguiente ejempo:
 </body>
 
   
-**Al final** nuestro url queda de la siguiente manera:
+**Al final** nuestra practica queda de la siguiente manera
 
-#### `https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true`
+
 
 <p align="center">
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/CSS/InformeCSS/Resultado.png">
 </p>
 
 
@@ -223,11 +213,10 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 ## Conclusiones y Recomendaciones
 
-- Se recomienda mejorar la presentacion
-- Se recomienda usar el ir a cabecera despues de terminar una seccion
-- Se aprendio el uso de HTML con Markdown
-- Conocimos herramientas de desarrollo web como postman e inspector web
-- Desarrollamos conocimientos de introducción Web
+- En las unidades de medida de los elementos más importantes es bueno utilizar aquellas que no son absolutas
+- Es importante recomendar el uso de la nueva propiedad: font-face, que permite el uso de tipografías que no estén instaladas en nuestro ordenador.
+- Se aprendio el uso de HTML con CSS
+
 
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -235,5 +224,5 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 # ¡Gracias por su atención!
 
-Author: [Adrian Eguez](https://github.com/adrianeguez)# Introducción a la Web
+Author: [Wilmer Guevara](https://github.com/wilgue10)
 
