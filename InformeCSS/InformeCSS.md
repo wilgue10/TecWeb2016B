@@ -19,8 +19,8 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#hist">Historia y Facts</a>
-  * <a href="#defhtml">Definicion HTML</a>
+  * <a href="#hist">Definicion CSS</a>
+  * <a href="#defhtml">Sintaxis o como se escriben los estilos CSS</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
@@ -38,7 +38,7 @@ El tema de la práctica es: `Introduccion a la Web`
 <a name="marco-teorico"></a>
 ## Marco Teorico
 <a name="defhtml"></a>
-### Definición HTML
+### Definición CSS
 
 Su poético nombre, hojas de estilos en cascada (Cascade style sheets) nos avisa de su lado más visual, de que llegan como el agua, desde distintas fuentes, para enriquecer aquello que tocan.¿Qué son los estilos CSS? La definición formal, de wikipedia, quizás no nos ayude demasiado, pero lo vamos a intentar:
 
@@ -57,7 +57,7 @@ Gracias a ellas podrás pintar en soportes digitales. En la versión que estamos
 </p>
 <br><br>
 <a name="hist"></a>
-### sintaxis o como se escriben los estilos CSS
+### Sintaxis o como se escriben los estilos CSS
 
 Sintáxis o como se escriben los estilos CSS
 Y antes de asustarnos por las diferentes variables que suponen recomendaros, que lo mejor es consultar de vez en cuando páginas como las que os recomiendo en el apartado de enlaces recomendados. Podréis encontrar desde editores online hasta páginas que te generan el contenido.
