@@ -57,21 +57,93 @@ Gracias a ellas podrás pintar en soportes digitales. En la versión que estamos
 </p>
 <br><br>
 <a name="hist"></a>
-### Historia y Facts
+### sintaxis o como se escriben los estilos CSS
 
-La Web tiene una estructura Cliente-Servidor de forma
-que los proveedores de información (servidores) atienden a las
-peticiones de los programas cliente (normalmente denominados
-navegadores o browsers) que son manejados por el usuario final.
-Además, este software cliente, por ser más moderno, tiene la
-peculiaridad de que es capaz de entenderse con otro tipo de servicios o protocolos,
-como son ftp, news, gopher..., de manera que sólo hace falta un programa para utilizar
-todos los servicios disponibles en la red.  (Fuente: <a href="http://www.edificacion.upm.es/informatica/documentos/www.pdf">Wikipedia</a>)
+Sintáxis o como se escriben los estilos CSS
+Y antes de asustarnos por las diferentes variables que suponen recomendaros, que lo mejor es consultar de vez en cuando páginas como las que os recomiendo en el apartado de enlaces recomendados. Podréis encontrar desde editores online hasta páginas que te generan el contenido.
+
+ 
+
+Si nosotros abrimos un documento en un editor de texto, como notepad, wordpad o cualquiera de los que vienen instalados en nuestro equipo informático, será suficiente. También podemos trabajar con editores de html y css como dreamweaver (Adobe) o KompoZer o Amaia (de software libre), hay muchos más como EDITplus o Netbeans (también de código abierto). Escribimos el ejemplo a continuación y guardamos el documento con un nombre y .css, ya habremos creado nuestra primera hoja de estilo.
+
+Y se podrán poner tantas propiedades como consideremos.  ((Fuente: [Pag Web](http://aulasne.navarra.es/mod/page/view.php?id=1423)
 <br>
 <a href="#cabecera">A la cabecera</a>
+Ejemplo::
 
+
+```
+body { color: grey;} y nuestro documento se verá con el texto escrito en gris.
+
+ 
+```
+Selector: Sera la parte del html que queremos retocar, pueden ser los párrafos (etiqueta<p>) o el fondo de la publicación con la etiqueta <body>. En este apartados hay numerosas combinaciones, vamos a ir viendo de lo sencillo a aplicaciones más complejas.
+
+ 
+
+Propiedad: Es la parte que va a afectar, podremos definir su alineación (text-align) , su color (color), el tipo de letra... en este módulo formativo vamos a ver estas propiedades y a darte algunas herramientas que te permitan estar actualizado.
+
+ 
+
+Valor: Será la cantidad de propiedad que queremos aplicar, o el tipo de letra... cada propiedad lleva asociado unos valores posibles.
+
+###CSS con HTML
+
+Pero también podemos definirlas en un fichero externo y luego llamarlas desde el código HTML. Esta es sin duda alguna una de sus mayores usos, ya que nos permite crear una misma hoja de estilos para toda la Web que luego llamamos desde cada una de las páginas. De esta manera, cambiando el fichero que contiene la hoja de estilos podemos cambiar el aspecto de toda la web.
+
+Existen dos maneras de enlazar las hojas de estilo.
+
+Haciendo uso de la etiqueta <link>
+
+
+
+
+
+```
+
+
+<html>
+
+<head>
+
+<link rel=”stylesheet” type=”text/css” href=”hoja_estilos.css”>
+
+</head>
+
+......
+
+</html>
+ 
+```
+
+
+
+O utilizando la etiqueta @IMPORT
+```
+<html>
+
+<head>
+
+<style type=”text/css”>
+
+@import url(“hoja_estilo.css”)
+
+</style>
+
+</head>
+
+......
+
+</html>
+```
 
 <a name="desarrollo"></a>
+
+
+
+
+
+
 ## Desarrollo del informe
 
 ### Imagenes desde Github **IMPORTANTE**
@@ -99,16 +171,6 @@ Se pueden usar imágenes desde nuestros archivos en github que constan de la sig
 <img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
 </p>
 
-Por ultimo podemos centrar las imagenes de la siguiente manera:
-
-
-```
-<p align="center">
-
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
-
-</p>
-```
 
 ### Links dentro de github
 
