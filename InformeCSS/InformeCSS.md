@@ -1,4 +1,4 @@
-# Introducción a la Web
+# Etilos CSS
 
 ### Materia : `Tecnologías Web con JavaScript`
 
@@ -7,10 +7,10 @@
 </p>
 
 ### Tema : `Introducción a la Web` 
-### Fecha : `2016-10-28`
+### Fecha : `2016-11-01`
 ### Estudiante : `Wilmer Vinicio Guevara Farinango`
 ### Profesor : `Tania Calle - Adrian Eguez`
-### Número de informe : `1`
+### Número de informe : `2`
 
 <a name="cabecera"></a>
 ## Índice de contenidos
@@ -31,28 +31,29 @@ El tema de la práctica es: `Introduccion a la Web`
 <a name="objetivos"></a>
 ## Objetivos
 
-- aprender sobre la tecnología web
-- manipular herramientas para el conocimiento de la tecnología web
-- Aprender el uso de lenguaje HTML CSS
+- Conocer la sintáxis de los estilos en cascada
+- Aprender las diferentes formas de relacionarse con el html
+- Ser capaces de escribir una hoja CSS
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
 <a name="defhtml"></a>
 ### Definición HTML
 
-HTML es una implementación del standard SGML (Standard
-Generalized Markup Language), estándar internacional para la definición de
-texto electrónico independiente de dispositivos, sistemas y aplicaciones.
-Metalenguaje para definir lenguajes de diseño descriptivos; proporciona
-un medio de codificar documentos hipertexto cuyo destino sea el intercambio
-directo entre sistemas o aplicaciones.
- (Fuente: [Wikipedia](http://www.asptutor.com/zip/cbhtml.pdf))
+Su poético nombre, hojas de estilos en cascada (Cascade style sheets) nos avisa de su lado más visual, de que llegan como el agua, desde distintas fuentes, para enriquecer aquello que tocan.¿Qué son los estilos CSS? La definición formal, de wikipedia, quizás no nos ayude demasiado, pero lo vamos a intentar:
+
+“Hacen referencia a un lenguaje de hojas de estilos usado para describir la presentación semántica (el aspecto y formato) de un documento escrito en lenguaje de marcas. Su aplicación más común es dar estilo a páginas webs escritas en lenguaje HTML y XHTML, pero también puede ser aplicado a cualquier tipo de documentos XML, incluyendo SVG y XUL”
+
+Su importancia reside en que cambiaron la forma de diseñar la web, los libros electrónicos, los blogs, los wordpress etc... abriendo un panorama visual y unas posibilidades muy importantes.
+
+Gracias a ellas podrás pintar en soportes digitales. En la versión que estamos actualmente, las CSS3, se han añadido mejoras tan importantes como posibilidad de hacer degradados, formas redondeadas, adaptar el contenido web a los móviles, interactuar y modificar los elementos al pasar el ratón y un montón de posibilidades que vamos a ir viendo.
+ (Fuente: [Pag Web](http://aulasne.navarra.es/mod/page/view.php?id=1423)
 <br>
 <a href="#cabecera">A la cabecera</a>
 
 <br><br>
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL87J78U9hpBBXqnSizvhom_2nH_e1iyh_piQD_dNkKJnlrBuuqA" width="300" height="200">
+<img src="http://3.bp.blogspot.com/-Uxx7MPNoW6M/VawObbctiEI/AAAAAAAAWTs/5IopYFMO3PM/s1600/CSS%2BLo%2Bnuevo.png">
 </p>
 <br><br>
 <a name="hist"></a>
