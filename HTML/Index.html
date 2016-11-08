@@ -1,133 +1,117 @@
+<!-- html:5 EMMET-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    
     <script>
         
-        alert('Hola');
-        console.log('hola desde la consola');
-     
+//        alert('Hola');
 //        console.log('Hola desde la consola');
         
-//        var texto="Texto";
-//        var numero = 1;
-//        var float = 1.223;
-//        var booleanTrue = true;
-//        var booleanFalse = false;
-//        var varNull = null;
-//        var varUndefined = undefined;
-//        
-//        console.log(texto);
-//        
-//        var textoNumero="2";
-//        console.log('Valor cuando es string');
-//        console.log(textoNumero);
-//        
-//        textoNumero=2;
-//        console.log('Valor cuando es numero');
-//        console.log(textoNumero);
-//        
-//        var numero = 1;
-//        console.log(numero);
-//        
-//        var float = 1.223; 
-//        console.log(float);
-//        
-//        textoNumero=float;
-//        console.log('Valor cuando es float');
-//        console.log(textoNumero);
-//        
-//        
-//        var booleanTrue = true;
-//        console.log(booleanTrue);
-//        
-//        textoNumero=booleanTrue;
-//        console.log('Valor cuando es true');
-//        console.log(textoNumero);
-//        
-//        
-//        var booleanFalse = false;
-//        console.log(booleanFalse);
-//        
-//        textoNumero=booleanFalse;
-//        console.log('Valor cuando es false');
-//        console.log(textoNumero);
-//        
-//        var varNull = null;
-//        console.log(varNull);
-//        
-//        textoNumero=varNull;
-//        console.log('Valor cuando es null');
-//        console.log(textoNumero);
-//        
-//        
-//        var varUndefined = undefined;
-//        console.log(varUndefined);
-//        
-//        textoNumero=varUndefined;
-//        console.log('Valor cuando es undefinde');
-//        console.log(textoNumero);
+        var texto="Texto";
+        console.log(texto);
+        
+        var textoNumero="2";
+        console.log('Valor cuando es string');
+        console.log(textoNumero);
+        
+        textoNumero=2;
+        console.log('Valor cuando es numero');
+        console.log(textoNumero);
+        
+        var numero = 1;
+        console.log(numero);
+        
+        var float = 1.223; 
+        console.log(float);
+        
+        textoNumero=float;
+        console.log('Valor cuando es float');
+        console.log(textoNumero);
         
         
-       /*
-       var arreglosString=['1','2','3'];
-       console.log(arreglosString);
-        var arreglosNumeros=[1,2,3;
-       console.log(arreglosNumeros);
-   
+        var booleanTrue = true;
+        console.log(booleanTrue);
+        
+        textoNumero=booleanTrue;
+        console.log('Valor cuando es true');
+        console.log(textoNumero);
         
         
-        var ArregloTodo=["nombre"
-                        ,123
-                        ,3.21456
-                        ,false
-                        ,undefined,true];
+        var booleanFalse = false;
+        console.log(booleanFalse);
         
-       console.log(ArregloTodo);
+        textoNumero=booleanFalse;
+        console.log('Valor cuando es false');
+        console.log(textoNumero);
+        
+        var varNull = null;
+        console.log(varNull);
+        
+        textoNumero=varNull;
+        console.log('Valor cuando es null');
+        console.log(textoNumero);
         
         
+        var varUndefined = undefined;
+        console.log(varUndefined);
         
-        */
+        textoNumero=varUndefined;
+        console.log('Valor cuando es undefinde');
+        console.log(textoNumero);
+        
+        
        
-    //objetos
-       
-        
-        var wilmer={
-            'nombre':'wilmer',
-            'apellido':'guevara',
-            edad:24,
-            mascotas:['DOGY','MIMI'],
-            hermanos:[{'nombre':'Cristina',
-            'apellido':'guevara',}
-                      ,{'nombre':'Karina',
-            'apellido':'guevara',}],    
-        getNombre:    function(){
-            return wilmer.nombre();
-           
+            
+       var count=0;
+        var arregloNumero=[];
+        var objetoVacio
+        while (count>0){
+            
+            if (count%2==0){
+                
+                
+                console.log('el numero:'+count+'es par');
+            }else{
+                
+                
+                console.log('el numero:'+count+'es impar');
+                
+            }
+            arregloNumero.push(count)
         }
+        console.log(arregloNumero);
+        
+        
+        
+        arregloNumero.pop();
+        
+        arregloNumero.splice(0,1);
+        console.log(arregloNumero);
+        
+        
+        var numSheep=4;
+        var monthNumber=1;
+        var monthsToPrint=12;
+        
+        while (monthNumber<=monthsToPrint){
+            numSheep=numSheep*4;
+            console.log('there will be'+ numSheep +' after '+ monthNumber+'months');
+            monthNumber++;
+            
         }
-      /*   <wilmer>
-        <nombre>Wilmer</nombre>
-        <apellido>guevar </apellido>
-        <edad>24</edad>
-    </wilmer>*/
-        console.log(wilmer);
+        
+            
+        
+for(var i=0;i<10;i++){
+    
+    console.log(i);
+    
+}
         
         
-        //FUNCIONES
-      /*  cosole.log('ACCEDEER NOMBRE');
-        cosole.log(wilmer.nombre);
-        cosole.log('ACCEDEER apellido');
-        cosole.log(wilmer.apellido);
-        
-        cosole.log('ACCEDEER hermanos');
-        cosole.log(wilmer.hermanos);*/
-        
-       
     </script>
-  
 </head>
 <body>
     
