@@ -148,18 +148,18 @@
         }
 
         //ejerccio con ovejas a otro estado con multiplo de cuatro el 75%
-        
+
         numSheep = 4;
         monthNumber = 1;
         monthsToPrint = 12;
-           console.log('');
-        
+        console.log('');
+
         while (monthNumber <= monthsToPrint) {
             numSheep = numSheep * 4;
 
             if (monthNumber % 4 == 0) {
                 numSheep = numSheep - numSheep * 0.75;
-                console.log('MES' + monthNumber + ' OVEJAS' + numSheep );
+                console.log('MES' + monthNumber + ' OVEJAS' + numSheep);
             } else {
                 if (numSheep > 10000) {
                     numSheep = numSheep / 2;
@@ -171,58 +171,73 @@
             monthNumber++;
         }
 
-//funcion multiplicacion
+        //funcion multiplicacion
         var respuesta = prompt("cual es tu edad");
         console.log(parseInt(respuesta));
-        
-        function multiplicacion(num1,num2,num3){
-            
-            return num1*num2*num3;
-            
+
+        function multiplicacion(num1, num2, num3) {
+
+            return num1 * num2 * num3;
+
         }
-        
-              
-        
-        console.log( multiplicacion(2,6,9));
-        
-  //funcion mayor      
-        function mayor(a,b){
-            
-            if(a>b){
-                
-             console.log( a +'  es mayor que'+ b);
-            }else{
-                
-              console.log(b+'  es mayor que'+ a); 
+
+
+
+        console.log(multiplicacion(2, 6, 9));
+
+        //funcion mayor      
+        function mayor(a, b) {
+
+            if (a > b) {
+
+                console.log(a + '  es mayor que' + b);
+            } else {
+
+                console.log(b + '  es mayor que' + a);
             }
         }
-        mayor(3,2);
-        
+        mayor(3, 2);
+
         //agrupacion de funcion
-        
-        
-        function myStery(x,y){
-            
-            
-            var a=4*x*y;
-            var b=3*y+5;
-            var c=a+b;
+
+
+        function myStery(x, y) {
+
+
+            var a = 4 * x * y;
+            var b = 3 * y + 5;
+            var c = a + b;
             return c;
-            
+
         }
-        console.log(myStery(4,7));
-        
-             function myStery2(x,y){
-            
-            
-            var c=(4*x*y)+(3*y+5);
-              
+        console.log(myStery(4, 7));
+
+        function myStery2(x, y) {
+
+
+            var c = (4 * x * y) + (3 * y + 5);
+
             return c;
-            
+
         }
-        console.log(myStery2(4,7));
+        console.log(myStery2(4, 7));
+
+
+
+        function feedPerRanger(rengers, ovejas) {
+            var a = ovejas * 2 / rengers;
+            return a;
+
+
+        }
+        console.log(feedPerRanger(2, 4));
         
         
+        var movie1=[16,"Cnadles"];
+        var movie2=[3,"men","and","a","baby"];
+        var einghtiesMovies=[movie1,movie2];
+        
+        console.log(einghtiesMovies[1][4]);
     </script>
 </head>
 
