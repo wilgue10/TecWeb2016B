@@ -109,11 +109,41 @@
             console.log(i);
 
         }
-
+        //ejerccio con for
         for (monthNumber = 1; monthNumber < monthsToPrint; monthNumber++) {
             numSheep = numSheep * 4;
             console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
 
+
+        }
+
+
+        //ejerccio con 
+        count = 10
+        while (count > 0) {
+
+            if (count % 2 == 0) {
+
+
+                console.log('el numero:' + count);
+            }
+            count--;
+
+        }
+        //ejerccio con obejas a otro estado
+        numSheep = 4;
+        monthNumber = 1;
+        monthsToPrint = 12;
+        while (monthNumber <= monthsToPrint) {
+            numSheep = numSheep * 4;
+            if(numSheep>10000){
+                numSheep=numSheep/2;
+                console.log('there will be' + numSheep + ' after ' + monthNumber + 'months'+'han sido enviados a otro estado');
+            }else{
+             console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');   
+            }
+            
+            monthNumber++;
 
         }
     </script>
