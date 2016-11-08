@@ -130,21 +130,45 @@
             count--;
 
         }
-        //ejerccio con obejas a otro estado
+        //ejerccio con ovejas a otro estado
         numSheep = 4;
         monthNumber = 1;
         monthsToPrint = 12;
         while (monthNumber <= monthsToPrint) {
             numSheep = numSheep * 4;
-            if(numSheep>10000){
-                numSheep=numSheep/2;
-                console.log('there will be' + numSheep + ' after ' + monthNumber + 'months'+'han sido enviados a otro estado');
-            }else{
-             console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');   
+            if (numSheep > 10000) {
+                numSheep = numSheep / 2;
+                console.log('there will be' + numSheep + ' after ' + monthNumber + 'months' + 'han sido enviados a otro estado');
+            } else {
+                console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
             }
-            
+
             monthNumber++;
 
+        }
+
+        //ejerccio con ovejas a otro estado con multiplo de cuatro el 75%
+        
+        numSheep = 4;
+        monthNumber = 1;
+        monthsToPrint = 12;
+           console.log('');
+        
+        while (monthNumber <= monthsToPrint) {
+            numSheep = numSheep * 4;
+
+            if (monthNumber % 4 == 0) {
+                numSheep = numSheep - numSheep * 0.75;
+                console.log('MES' + monthNumber + ' OVEJAS' + numSheep );
+            } else {
+                if (numSheep > 10000) {
+                    numSheep = numSheep / 2;
+                    console.log('there will be' + numSheep + ' after ' + monthNumber + 'months' + 'han sido enviados a otro estado');
+                }
+
+
+            }
+            monthNumber++;
         }
     </script>
 </head>
