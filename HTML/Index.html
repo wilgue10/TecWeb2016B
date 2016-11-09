@@ -269,23 +269,46 @@
                 }
                 nombreFunction();
 */
+        /*
+                var passengers = [["Thomas", "Meeks"],
+                               ["gregg", "Pollack"],
+                               ["Christine", "wong"],
+                               ["Dan", "Mcgaw"]];
 
-        var passengers = [["Thomas", "Meeks"],
-                       ["gregg", "Pollack"],
-                       ["Christine", "wong"],
-                       ["Dan", "Mcgaw"]];
+                var modifiedNames = passengers.map(function (arrayNombreApellido) {
 
-        var modifiedNames = passengers.map(function (arrayNombreApellido) {
+                    return arrayNombreApellido[0] + " " + arrayNombreApellido[1]
+                });
+                console.log(modifiedNames);
 
-            return arrayNombreApellido[0] + " " + arrayNombreApellido[1]
-        });
-        console.log(modifiedNames);
+                //funcionAnonima alerta
+                var alert = modifiedNames.map(function (nombrePasajero) {
+                    alert('yo' + nombrePasajero)
 
-        //funcionAnonima
-        var alert = modifiedNames.map(function (nombrePasajero) {
-            alert('yo'+ nombrePasajero  )
+                });*/
 
-        });
+
+        //ejercicio con imput 
+
+        var puzzlers = [
+            function (input) {
+                return ((3 * input) - 8);
+            },
+            function (input) {
+                return Math.pow((input + 2), 3);
+            },
+            function (input) {
+                return Math.pow(input, 2) - 9
+            },
+            function (input) {
+                return input % 4;
+            }
+            ];
+
+        console.log(puzzlers[0](5));
+        console.log(puzzlers[1](5));
+        console.log(puzzlers[2](5));
+        console.log(puzzlers[3](5));
     </script>
 </head>
 
