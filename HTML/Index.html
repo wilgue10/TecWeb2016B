@@ -9,10 +9,10 @@
         //        alert('Hola');
         //        console.log('Hola desde la consola');
 
-        var texto = "Texto";
-        console.log(texto);
+        /*var texto = "Texto";
+        console.log(texto);*/
 
-        var textoNumero = "2";
+        /*var textoNumero = "2";
         console.log('Valor cuando es string');
         console.log(textoNumero);
 
@@ -60,10 +60,10 @@
         textoNumero = varUndefined;
         console.log('Valor cuando es undefinde');
         console.log(textoNumero);
+*/
 
 
-
-
+/*
         var count = 0;
         var arregloNumero = [];
         var objetoVacio
@@ -152,9 +152,9 @@
         numSheep = 4;
         monthNumber = 1;
         monthsToPrint = 12;
-        console.log('');
+        console.log('');*/
 
-        while (monthNumber <= monthsToPrint) {
+     /*   while (monthNumber <= monthsToPrint) {
             numSheep = numSheep * 4;
 
             if (monthNumber % 4 == 0) {
@@ -241,9 +241,9 @@
 
 
         var res = 0;
-
+*/
         //contador de strings
-        function contadorString(cadenaAreglos) {
+       /* function contadorString(cadenaAreglos) {
             var res = 0;
             for (var i = 0; i < cadeAreglos.length; i++) {
                 if (typeof cadeAreglos[i] == 'string') {
@@ -268,6 +268,18 @@
 
                 }
                 nombreFunction();
+*/
+
+                var passengers = [["Thomas", "Meeks"],
+                       ["gregg", "Pollack"],
+                       ["Christine", "wong"],
+                       ["Dan", "Mcgaw"]];
+
+                var modifiedNames = passengers.map(function (arrayNombreApellido) {
+
+                    return arrayNombreApellido[0]+" "+arrayNombreApellido[1]
+                });
+        console.log(modifiedNames);
     </script>
 </head>
 
