@@ -314,7 +314,7 @@
 
 
         //ejercicioFuncionCon Funcion Anonima
-        function adventureSelector(userChoice) {
+        /*function adventureSelector(userChoice) {
             if (userChoice == 1) {
                 return function () {
                     alert('Domm');
@@ -335,6 +335,37 @@
         console.log(adventureSelector(1)(1));
         console.log(adventureSelector(2)(1));
         console.log(adventureSelector(3)(1));
+*/
+
+
+        //ejercicioConColasY funciones
+        var star = 2;
+        var apllyAndEmpty = function (input, queue) {
+            var auxResFunction;
+            for (var i = 0; i < queue.length; i++) {
+                auxResFunction = queue[i](input)
+                console.log(auxResFunction)
+                input = auxResFunction
+                    //queue.splice(0, 1);
+            }
+            console.log(input)
+            return input;
+        }
+        console.log(apllyAndEmpty(star, puzzlers));
+
+
+
+        var star = 2;
+        var apllyAndEmpty = function (input, queue) {
+            var longitud=queue.length
+            for (var i = 0; i < longitud; i++) {
+                input=queue
+                    //queue.splice(0, 1);
+            }
+            console.log(input)
+            return input;
+        }
+        console.log(apllyAndEmpty(star, puzzlers));
     </script>
 </head>
 
