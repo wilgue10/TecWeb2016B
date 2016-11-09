@@ -63,98 +63,98 @@
 */
 
 
-/*
-        var count = 0;
-        var arregloNumero = [];
-        var objetoVacio
-        while (count > 0) {
+        /*
+                var count = 0;
+                var arregloNumero = [];
+                var objetoVacio
+                while (count > 0) {
 
-            if (count % 2 == 0) {
-
-
-                console.log('el numero:' + count + 'es par');
-            } else {
+                    if (count % 2 == 0) {
 
 
-                console.log('el numero:' + count + 'es impar');
-
-            }
-            arregloNumero.push(count)
-        }
-        console.log(arregloNumero);
+                        console.log('el numero:' + count + 'es par');
+                    } else {
 
 
+                        console.log('el numero:' + count + 'es impar');
 
-        arregloNumero.pop();
-
-        arregloNumero.splice(0, 1);
-        console.log(arregloNumero);
-
-
-        var numSheep = 4;
-        var monthNumber = 1;
-        var monthsToPrint = 12;
-
-        while (monthNumber <= monthsToPrint) {
-            numSheep = numSheep * 4;
-            console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
-            monthNumber++;
-
-        }
+                    }
+                    arregloNumero.push(count)
+                }
+                console.log(arregloNumero);
 
 
 
-        for (var i = 0; i < 10; i++) {
+                arregloNumero.pop();
 
-            console.log(i);
-
-        }
-        //ejerccio con for
-        for (monthNumber = 1; monthNumber < monthsToPrint; monthNumber++) {
-            numSheep = numSheep * 4;
-            console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
+                arregloNumero.splice(0, 1);
+                console.log(arregloNumero);
 
 
-        }
+                var numSheep = 4;
+                var monthNumber = 1;
+                var monthsToPrint = 12;
+
+                while (monthNumber <= monthsToPrint) {
+                    numSheep = numSheep * 4;
+                    console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
+                    monthNumber++;
+
+                }
 
 
-        //ejerccio con 
-        count = 10
-        while (count > 0) {
 
-            if (count % 2 == 0) {
+                for (var i = 0; i < 10; i++) {
+
+                    console.log(i);
+
+                }
+                //ejerccio con for
+                for (monthNumber = 1; monthNumber < monthsToPrint; monthNumber++) {
+                    numSheep = numSheep * 4;
+                    console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
 
 
-                console.log('el numero:' + count);
-            }
-            count--;
+                }
 
-        }
-        //ejerccio con ovejas a otro estado
-        numSheep = 4;
-        monthNumber = 1;
-        monthsToPrint = 12;
-        while (monthNumber <= monthsToPrint) {
-            numSheep = numSheep * 4;
-            if (numSheep > 10000) {
-                numSheep = numSheep / 2;
-                console.log('there will be' + numSheep + ' after ' + monthNumber + 'months' + 'han sido enviados a otro estado');
-            } else {
-                console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
-            }
 
-            monthNumber++;
+                //ejerccio con 
+                count = 10
+                while (count > 0) {
 
-        }
+                    if (count % 2 == 0) {
 
-        //ejerccio con ovejas a otro estado con multiplo de cuatro el 75%
 
-        numSheep = 4;
-        monthNumber = 1;
-        monthsToPrint = 12;
-        console.log('');*/
+                        console.log('el numero:' + count);
+                    }
+                    count--;
 
-     /*   while (monthNumber <= monthsToPrint) {
+                }
+                //ejerccio con ovejas a otro estado
+                numSheep = 4;
+                monthNumber = 1;
+                monthsToPrint = 12;
+                while (monthNumber <= monthsToPrint) {
+                    numSheep = numSheep * 4;
+                    if (numSheep > 10000) {
+                        numSheep = numSheep / 2;
+                        console.log('there will be' + numSheep + ' after ' + monthNumber + 'months' + 'han sido enviados a otro estado');
+                    } else {
+                        console.log('there will be' + numSheep + ' after ' + monthNumber + 'months');
+                    }
+
+                    monthNumber++;
+
+                }
+
+                //ejerccio con ovejas a otro estado con multiplo de cuatro el 75%
+
+                numSheep = 4;
+                monthNumber = 1;
+                monthsToPrint = 12;
+                console.log('');*/
+
+        /*   while (monthNumber <= monthsToPrint) {
             numSheep = numSheep * 4;
 
             if (monthNumber % 4 == 0) {
@@ -243,7 +243,7 @@
         var res = 0;
 */
         //contador de strings
-       /* function contadorString(cadenaAreglos) {
+        /* function contadorString(cadenaAreglos) {
             var res = 0;
             for (var i = 0; i < cadeAreglos.length; i++) {
                 if (typeof cadeAreglos[i] == 'string') {
@@ -270,16 +270,22 @@
                 nombreFunction();
 */
 
-                var passengers = [["Thomas", "Meeks"],
+        var passengers = [["Thomas", "Meeks"],
                        ["gregg", "Pollack"],
                        ["Christine", "wong"],
                        ["Dan", "Mcgaw"]];
 
-                var modifiedNames = passengers.map(function (arrayNombreApellido) {
+        var modifiedNames = passengers.map(function (arrayNombreApellido) {
 
-                    return arrayNombreApellido[0]+" "+arrayNombreApellido[1]
-                });
+            return arrayNombreApellido[0] + " " + arrayNombreApellido[1]
+        });
         console.log(modifiedNames);
+
+        //funcionAnonima
+        var alert = modifiedNames.map(function (nombrePasajero) {
+            alert('yo'+ nombrePasajero  )
+
+        });
     </script>
 </head>
 
