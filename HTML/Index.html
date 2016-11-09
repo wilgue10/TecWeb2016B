@@ -309,6 +309,32 @@
         console.log(puzzlers[1](5));
         console.log(puzzlers[2](5));
         console.log(puzzlers[3](5));
+
+
+
+
+        //ejercicioFuncionCon Funcion Anonima
+        function adventureSelector(userChoice) {
+            if (userChoice == 1) {
+                return function () {
+                    alert('Domm');
+                }
+            } else {
+                if (userChoice == 2) {
+                    return function () {
+                        alert('lake of despair');
+                    }
+                } else {
+                    return function () {
+                        alert('catastrophe');
+                    }
+                }
+            }
+        }
+
+        console.log(adventureSelector(1)(1));
+        console.log(adventureSelector(2)(1));
+        console.log(adventureSelector(3)(1));
     </script>
 </head>
 
