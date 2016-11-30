@@ -8,7 +8,12 @@ app.get('/Teconologias Web', function (req, res) {
   res.send('con javaScript!');
 });
 app.post('/Teconologias Web', function (req, res) {
-  res.send('con post!');
+    console.log("REQUEST"req);
+    console.log("RESPONT"res);
+    console.log("REQUEST HEADERS"req.HEADERS_RECEIVED);
+    console.log("RESPONT HEADERS "res.head);
+    
+  res.send('con POST!');
 });
 
 app.listen(5050, function () {
