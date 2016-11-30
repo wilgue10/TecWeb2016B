@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var contador=3;
 var usuarios=[
     {
         id:1,
@@ -42,7 +43,34 @@ app.get('/Usuario/:idUsuario', function (req, res) {
 app.get('/Teconologias Web', function (req, res) {
   res.send('con javaScript!');
 });
-app.post('/Teconologias Web', function (req, res) {
+
+app.post('/Usuario', function (req, res) {
+    console.log(req.query.nombre);
+     console.log(req.query.cedula);
+    
+    
+    if(!req.query.nombre){
+        res.send('no envio el nombre')
+        
+        
+    }
+    if(!req.query.cedula){
+        
+        
+        res.send('no envio la cedula')
+        
+    }
+     var nuevoUsuarios={
+        
+        
+        id:contador+1,
+        nombre:req.query.nombre,
+        cedula:req.query.ceddula
+    }
+     
+    usuarios.push(nuevoUsuarios);
+    contador++;
+    res.json(nuevoUsuarios)
     
 //    var parametros=req.params;
 //    
