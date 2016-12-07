@@ -18,10 +18,34 @@ var usuarios=[
         cedula:'1111111'
     }
 ]
+var fs = require('fs');
+
+var quepasa='';
+
+quepasa='esta por leer el archivo';
+
+
+quepasa='termino de leer el archivo';
+
+//console.log(quepasa);
+
+
+
+
+
 app.get('/', function (req, res) {
-  res.send('Hello World!');
-   
-});
+    res.send('Bienvenidos al Api de Usuarios!')
+    
+    fs.readFile('./paginas/pagina1.html',
+    'utf8',
+    function (error, archivoLeido) {
+        console.log(error);
+        console.log(archivoLeido);
+        res.send(archivoLeido);
+    });
+    
+    
+})
 app.get('/Usuario', function (req, res) {
 
     res.json(usuarios);
