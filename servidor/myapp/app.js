@@ -18,10 +18,46 @@ var usuarios=[
         cedula:'1111111'
     }
 ]
+var fs = require('fs');
 app.get('/', function (req, res) {
-  res.send('Hello World!');
-   
-});
+    
+
+    console.log('1 antes de leer');
+    var todo = '';
+
+    fs.readFile('./paginas/pagina.html',
+    'utf8',
+    function (error, archivoLeido) {
+        console.log(error);
+        console.log(archivoLeido);
+        res.send(archivoLeido);
+    });
+    
+    
+        'utf8',
+        function (error, archivoLeido1) {
+        todo+=archivoLeido1;
+
+            fs.readFile('./paginas/usuario.html',
+                'utf8',
+                function (error, archivoLeido2) {
+                
+                todo+=archivoLeido2;
+
+                    fs.readFile('./paginas/footer.html',
+                        'utf8',
+                        function (error, archivoLeido3) {
+                            todo+=archivoLeido3;
+                        
+                            res.send(todo);
+                        });
+                });
+
+        });
+
+    console.log('2 parece que termino de leer');
+
+})
 app.get('/Usuario', function (req, res) {
 
     res.json(usuarios);
