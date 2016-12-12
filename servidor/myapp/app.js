@@ -119,6 +119,16 @@ app.post('/Usuario', function (req, res) {
 
    
 });
+app.put('/Usuario/:idUsuario', function (req, res) {
+    //implementacion
+    //El Usuario Actualizado
+})
+
+app.delete('/Usuario/:idUsuario', function (req, res) {
+    //implementacion
+    //El Usuario Borrado
+})
+
 
 app.listen(5050, function () {
   console.log('Example app listening on port 5050!');
