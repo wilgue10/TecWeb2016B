@@ -130,7 +130,7 @@ No podíamos irnos sin recordarte que puedes acceder a algunos de nuestros curso
 
 <br><br>
 <p align="center">
-<img src="https://i.ytimg.com/vi/mVOsWkHhcIM/hqdefault.jpg" width="300" height="200">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/carpetas.png">
 </p>
 
 <a href="#cabecera">A la cabecera</a>
