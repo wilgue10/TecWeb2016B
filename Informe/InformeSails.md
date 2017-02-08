@@ -181,7 +181,7 @@ sails new NombreDel proyecto
  Si la creación fue exitosa se muestra en la consola algo así:
  <br><br>
 <p align="center">
-<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/sailsNewI.png" width="300" height="200">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/sailsNewI.png" width="300" height="100">
 </p>
 
 ### Crear un Api
@@ -205,7 +205,7 @@ sails generate api NombreAP
  Si la creación fue exitosa se muestra en la consola algo así:
  <br><br>
 <p align="center">
-<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/generateApi.PNG" width="300" height="200">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/generateApi.PNG" width="300" height="100">
 </p>
 
 
