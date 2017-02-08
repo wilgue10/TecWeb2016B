@@ -55,7 +55,7 @@ Esto se logra gracias a que SailsJS sigue un conjunto cuidadosamente selecto de 
 
 <br><br>
 <p align="center">
-<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/sails.jpg" width="300" height="200">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/sails.jpg" >
 </p>
 
 <a href="#cabecera">A la cabecera</a>
