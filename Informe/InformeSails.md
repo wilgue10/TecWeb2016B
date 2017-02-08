@@ -181,7 +181,7 @@ sails new NombreDel proyecto
  Si la creación fue exitosa se muestra en la consola algo así:
  <br><br>
 <p align="center">
-<img src="imagenes/crearproyecto.PNG" width="500" height="100">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/sailsNewI.png" width="300" height="200">
 </p>
 
 ### Crear un Api
@@ -205,19 +205,9 @@ sails generate api NombreAP
  Si la creación fue exitosa se muestra en la consola algo así:
  <br><br>
 <p align="center">
-<img src="imagenes/api.PNG" width="500" height="100">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/generateApi.PNG" width="300" height="200">
 </p>
 
-### Código en el modelo
-
-
-
-
-Nos dirgimos al directori: api/models/"nombre del modelo que creamos" y ahi agregamos el código siguiente:
- <br><br>
-<p align="center">
-<img src="imagenes/modelo.PNG" width="500" height="100">
-</p>
 
 
 Ahora inicializamos el servidor para ello en la terminal ejecutamos el comando:
@@ -228,26 +218,13 @@ sails lift
  <br><br>
  Si la ejecución es correcta se mostrará en consola algo asi:
  
+ <br><br>
 <p align="center">
-<img src="imagenes/lift.PNG" width="500" height="100">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/sailsLift.png" width="300" height="200">
 </p>
 
-Ahora en Postman ingresamos los siguientes parametros en el metodo post:
-<p align="center">
-<img src="imagenes/post.PNG" width="500" height="100">
-</p>
 
-Damos click en send y si todo fue correcto  se agregará el registro:
-<p align="center">
-<img src="imagenes/post2.PNG" width="500" height="100">
-</p>
 
-Para visualizar todos los registos que hemos creado usamos el metodo get:
-<p align="center">
-<img src="imagenes/get.PNG" width="500" height="100">
-</p>
-
-  <a name="conrec"></a>
 
 <br>
 <a href="#cabecera">A la cabecera</a>
