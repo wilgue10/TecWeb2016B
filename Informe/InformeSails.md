@@ -55,7 +55,7 @@ Esto se logra gracias a que SailsJS sigue un conjunto cuidadosamente selecto de 
 
 <br><br>
 <p align="center">
-<img src="https://cdn.tutsplus.com/net/uploads/2013/06/sails-preview-400-2.jpg" width="300" height="200">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/sails.jpg" width="300" height="200">
 </p>
 
 <a href="#cabecera">A la cabecera</a>
@@ -130,7 +130,7 @@ No podíamos irnos sin recordarte que puedes acceder a algunos de nuestros curso
 
 <br><br>
 <p align="center">
-<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/carpetas.png">
+<img src="https://github.com/wilgue10/TecWeb2016B/blob/10Sails/Informe/RecursosInformeImagenes/carpetas.png"    >
 </p>
 
 <a href="#cabecera">A la cabecera</a>
