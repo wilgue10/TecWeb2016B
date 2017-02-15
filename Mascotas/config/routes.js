@@ -32,21 +32,23 @@ module.exports.routes = {
      *                                                                          *
      ***************************************************************************/
 
-    '/': {
-        view: 'homepage'
+    'get /': 'RutasController.home',
+
+    'get /Login': {
+        view: 'login'
     },
-    '/Quito':{
-        view:'quito'
-    },
-    '/Guayaquil':{
-        view:'guayaquil'
-    },
-    '/Cuenca':{
-        view:'cuenca'
-    },
-    'get /Inicio':  'RutasController.home',
-    'get /CrearUsuario':  'RutasController.crearUsuario'
-    
+
+
+    'get /Inicio': 'RutasController.home',
+
+    'get /CrearUsuario': 'RutasController.crearUsuario',
+
+    'get /ListarUsuarios': 'RutasController.listarUsuarios',
+
+    'get /EditarUsuario': 'RutasController.editarUsuario',
+
+    'get /Error': 'RutasController.error'
+
 
     /***************************************************************************
      *                                                                          *
