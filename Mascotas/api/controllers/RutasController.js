@@ -6,20 +6,19 @@
  */
 
 module.exports = {
-    
-    home:function(req,res){
+
+    home: function (req, res) {
         return res.view('vistas/home');
     },
-    
-    crearUsuario:function(req,res){
+    crearUsuario: function (req, res) {
         return res.view('vistas/Usuario/crearUsuario');
     },
-    error:function(req,res){
-        return res.view('vistas/Error',{
-            error:{
-                desripcion:"Usted esta por error en esta Ruta dirijase a Inicio",
-                rawError:"Ruta equivocada",
-                url:"/Inicio"
+    error: function (req, res) {
+        return res.view('vistas/Error', {
+            error: {
+                desripcion: "Usted esta por error en esta Ruta dirijase a Inicio",
+                rawError: "Ruta equivocada",
+                url: "/Inicio"
             }
         });
     },
@@ -37,19 +36,60 @@ module.exports = {
                         }
                     });
                 }
-            
+
                 res.view('vistas/Usuario/ListarUsuarios', {
-                    usuarios:usuariosEncontrados
+                    usuarios: usuariosEncontrados
                 });
             })
+    },
+    editarUsuario: function (req, res) {
+
+        var parametros = req.allParams();
+
+        if (parametros.id) {
+
+            Usuario.findOne({
+                id: parametros.id
+            }).exec(function (errorInesperado, UsuarioEncontrado) {
+                if (errorInesperado) {
+                    return res.view('vistas/Error', {
+                        error: {
+                            desripcion: "Error Inesperado",
+                            rawError: errorInesperado,
+                            url: "/ListarUsuarios"
+                        }
+                    });
+                }
+                if(UsuarioEncontrado){
+                     return res.view("vistas/Usuario/editarUsuario",{
+                         usuarioAEditar:UsuarioEncontrado,
+                         inicioSesion:true
+                     });
+                }else{
+                    return res.view('vistas/Error', {
+                        error: {
+                            desripcion: "El usuario con id: "+parametros.id+" no existe.",
+                            rawError: "No existe el usuario",
+                            url: "/ListarUsuarios"
+                        }
+                    });
+                }
+            })
+        } else {
+
+            return res.view('vistas/Error', {
+                error: {
+                    desripcion: "No ha enviado el parametro ID",
+                    rawError: "Faltan Parametros",
+                    url: "/ListarUsuarios"
+                }
+            });
+
+        }
     }
+
+    
+    
+    
     
 };
-
-
-    
-    
-    
-    
-    
-    
