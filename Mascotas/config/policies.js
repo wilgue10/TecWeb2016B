@@ -35,12 +35,17 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 	 RutasController: {
-
-
 		 home : true,
-         error: true,
-		 listarUsuarios : ['autentificado','esElmismoUsuario'],
-		 crearUsuario : ['autentificado','esElmismoUsuario'],
-		 editarUsuario : ['autentificado','esElmismoUsuario'],
+         error : true,
+         listarUsuarios : ['autenticado'],
+         crearUsuario : ['autenticado'],
+         editarUsuario : ['autenticado','esElMismoUsuario'],
 	 }
+    
+    
+    
+    
+    
+    
+    
 };
