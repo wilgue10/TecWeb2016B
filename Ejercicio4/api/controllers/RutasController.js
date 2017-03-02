@@ -6,181 +6,172 @@
  */
 
 module.exports = {
-
-    home: function (req, res) {
-        return res.view('vistas/home');
-    },
-    crearUsuario: function (req, res) {
-        return res.view('vistas/Usuario/crearUsuario');
+    
+	home: function (req, res) {
+        return res.view('home');
     },
     
-    crearHero: function (req, res) {
-        return res.view('vistas/Hero/crearHero');
+    crearHeroe: function (req, res) {
+        return res.view('Heroe/crearHeroe');
     },
-    listarHeros: function (req, res) {
-       HeroApi.find()
-            .exec(function (errorIndefinido, herosEncontrados) {
-
-                if (errorIndefinido) {
-                    res.view('vistas/Error', {
-                        error: {
-                            desripcion: "Hubo un problema cargando los Usuarios",
-                            rawError: errorIndefinido,
-                            url: "/ListarHeros"
-                        }
-                    });
-                }
-
-                res.view('vistas/Hero/ListarHeros', {
-                    heros: herosEncontrados
-                });
-            })
-    },
-    editarHero: function (req, res) {
-
-        var parametros = req.allParams();
-
-        if (parametros.id) {
-
-            HeroApi.findOne({
-                id: parametros.id
-            }).exec(function (errorInesperado, HeroEncontrado) {
-                if (errorInesperado) {
-                    return res.view('vistas/Error', {
-                        error: {
-                            desripcion: "Error Inesperado",
-                            rawError: errorInesperado,
-                            url: "/ListarHeros"
-                        }
-                    });
-                }
-                if(HeroEncontrado){
-                     return res.view("vistas/Hero/editarHero",{
-                         heroAEditar:HeroEncontrado,
-                         
-                     });
-                }else{
-                    return res.view('vistas/Error', {
-                        error: {
-                            desripcion: "El Hero con id: "+parametros.id+" no existe.",
-                            rawError: "No existe el Hero",
-                            url: "/ListarHeros"
-                        }
-                    });
-                }
-            })
-        } else {
-
-            return res.view('vistas/Error', {
-                error: {
-                    desripcion: "No ha enviado el parametro ID",
-                    rawError: "Faltan Parametros",
-                    url: "/ListarHeros"
-                }
-            });
-
-        }
-    },
+    
     error: function (req, res) {
-        return res.view('vistas/Error', {
+        return res.view('error', {
             error: {
-                desripcion: "Usted esta por error en esta Ruta dirijase a Inicio",
+                desripcion: "Usted esta por error en esta Ruta. Vaya a Inicio",
                 rawError: "Ruta equivocada",
                 url: "/Inicio"
             }
         });
     },
-    listarUsuarios: function (req, res) {
+    
+    listarHeroes: function (req, res) {
 
-        Usuario.find()
-            .exec(function (errorIndefinido, usuariosEncontrados) {
+        Heroe.find()
+            .exec(function (errorIndefinido, heroesEncontrados) {
 
                 if (errorIndefinido) {
-                    res.view('vistas/Error', {
+                    res.view('error', {
                         error: {
-                            desripcion: "Hubo un problema cargando los Usuarios",
+                            desripcion: "Hubo un problema cargando los héroes",
                             rawError: errorIndefinido,
-                            url: "/ListarUsuarios"
+                            url: "/ListarHeroes"
                         }
                     });
                 }
 
-                res.view('vistas/Usuario/ListarUsuarios', {
-                    usuarios: usuariosEncontrados
+                res.view('Heroe/listarHeroes', {
+                    heroes: heroesEncontrados
                 });
             })
     },
-    listarPoderes: function (req, res) {
 
-        PoderApi.find()
-            .exec(function (errorIndefinido, poderesEncontrados) {
-
-                if (errorIndefinido) {
-                    res.view('vistas/Error', {
-                        error: {
-                            desripcion: "Hubo un problema cargando los poderes",
-                            rawError: errorIndefinido,
-                            url: "/ListarPoderes"
-                        }
-                    });
-                }
-
-                res.view('vistas/Poder/listarPoderes', {
-                    poderes: poderesEncontrados
-                });
-            })
-    },
-    crearPoder: function (req, res) {
-        return res.view('vistas/Poder/crearPoder');
-    },
-    editarUsuario: function (req, res) {
+    editarHeroe: function (req, res) {
 
         var parametros = req.allParams();
 
         if (parametros.id) {
 
-            Usuario.findOne({
+            Heroe.findOne({
                 id: parametros.id
-            }).exec(function (errorInesperado, UsuarioEncontrado) {
+            }).exec(function (errorInesperado, heroeEncontrado) {
                 if (errorInesperado) {
-                    return res.view('vistas/Error', {
+                    return res.view('error', {
                         error: {
                             desripcion: "Error Inesperado",
                             rawError: errorInesperado,
-                            url: "/ListarUsuarios"
+                            url: "/ListarHeroes"
                         }
                     });
                 }
-                if(UsuarioEncontrado){
-                     return res.view("vistas/Usuario/editarUsuario",{
-                         usuarioAEditar:UsuarioEncontrado,
-                         inicioSesion:true
+                if(heroeEncontrado){
+                     return res.view("Heroe/editarHeroe",{
+                         heroeAEditar:heroeEncontrado
                      });
                 }else{
-                    return res.view('vistas/Error', {
+                    return res.view('error', {
                         error: {
-                            desripcion: "El usuario con id: "+parametros.id+" no existe.",
-                            rawError: "No existe el usuario",
-                            url: "/ListarUsuarios"
+                            desripcion: "El heroe con id: "+parametros.id+" no existe.",
+                            rawError: "No existe el heroe",
+                            url: "/ListarHeroes"
                         }
                     });
                 }
             })
         } else {
 
-            return res.view('vistas/Error', {
+            return res.view('error', {
                 error: {
                     desripcion: "No ha enviado el parametro ID",
                     rawError: "Faltan Parametros",
-                    url: "/ListarUsuarios"
+                    url: "/ListarHeroes"
                 }
             });
 
         }
-    }
+    },
+    
+//    Poder
+    
+    crearPoder: function (req, res) {
+		Heroe.find().exec(function (error, heroesEncontrados) {
+			if (error) return res.serverError();
+			return res.view('Poder/crearPoder', {
+				heroes: heroesEncontrados
+			});
+		});
 
-    
-    
-    
-    
+	},
+
+	listarPoderes: function (req, res) {
+		Poder.find()
+			.exec(function (error, poderesEncontrados) {
+
+				if (error) {
+					return res.view('error', {
+						error: {
+							descripcion: "Hubo un problema listando los poderes",
+							rawError: error,
+							url: "/ListarPoderes"
+						}
+					});
+				}
+
+				res.view('Poder/listarPoderes', {
+					poderes: poderesEncontrados
+				})
+
+			})
+	},
+
+    editarPoder: function (req, res) {
+
+		var parametros = req.allParams();
+
+		if (parametros.id) {
+			Poder.findOne({
+				id: parametros.id
+			}).exec(function (error, poderEncontrado) {
+				if (error) {
+					return res.view('error', {
+						error: {
+							descripcion: 'Fallo al buscar el poder',
+							rawError: error,
+							url: '/CrearPoder'
+						}
+					});
+				}
+                
+				Heroe.find().exec(function (error, heroesEncontrados) {
+					if (error) {
+						return res.view('error', {
+							title: 'Error',
+							error: {
+								descripcion: 'Fallo al buscar el heroe',
+								rawError: error,
+								url: '/CrearHeroe'
+							}
+						});
+					}
+
+					return res.view('Poder/editarPoder', {
+						poderAEditar: poderEncontrado,
+						heroes: heroesEncontrados
+					})
+				});
+
+			});
+
+		} else {
+			return res.view('error', {
+				error: {
+					desripcion: "No ha enviado el parametro ID",
+					rawError: "Faltan Parametros",
+					url: "/ListarPoderes"
+				}
+			});
+		}
+
+	}
 };
+

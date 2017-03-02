@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title><%=typeof title == 'undefined' ? 'New Sails App' : title%></title>
 
-<head>
-    <title>
-        <%=typeof title == 'undefined' ? 'New Sails App' : title%>
-    </title>
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS Bootstrap en la carpeta bootstrap -->
     <link rel="stylesheet" href="/Bootstrap/bootstrap/css/bootstrap.min.css">
+
+    <!-- JQuery y JavaScript Bootstrap en la carpeta bootstrap-->
     <script src="/Jquery/jquery-3.1.1.min.js"></script>
     <script src="/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+
     <!--
         Stylesheets and Preprocessors
         ==============================
@@ -30,39 +33,42 @@
             + Import stylesheets from other directories
             + Use a different or additional preprocessor, like SASS, SCSS or Stylus
     -->
+
     <!--STYLES-->
-    <link rel="stylesheet" href="/styles/estilosListarUsuarios.css">
+    <link rel="stylesheet" href="/styles/estilos.css.css">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span>MENU</span> </button> <a class="navbar-brand" href="/Inicio">Heros</a> </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="/Inicio">Inicio</a></li>
-                    <li><a href="/ListarHeros">Listar Heros</a></li>
-                    <li><a href="/ListarPoderes">Listar Poderes</a></li>
-                    
-                    <% if(typeof inicioSesion != 'undefined'){ %>
-                        <li><a href="/Login">Login</a></li>
-                        <% } %>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span>MENU</span>
+          </button>
+          <a class="navbar-brand" href="#">Héroes Pokémon</a>
         </div>
-        <!-- /.container-fluid -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/Inicio">Inicio</a></li>
+            <li><a href="/ListarHeroes">Lista de Héroes</a></li>
+            <li><a href="/CrearHeroe">Crear Héroe</a></li>
+            <li><a href="/ListarPoderes">Lista de Poderes</a></li>
+            <li><a href="/CrearPoder">Crear Poder</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-    <!--      .container   EMMET -->
     <div class="container">
-        <%- body %>
+      <%- body %>
     </div>
-    <div class="navbar navbar-fixed-bottom"> Desarrolado por Wilmer Guevara </div>
+
+<div class="navbar navbar-fixed-bottom"> Desarrolado por Wilmer Guevara </div>
+
     <!--
         Client-side Templates
         ========================
@@ -83,9 +89,12 @@
             + Internationalize your client-side templates using a server-side
               stringfile before they're served.
     -->
+
     <!--TEMPLATES-->
-    <script type="text/javascript" src="/jst.js"></script>
+    
     <!--TEMPLATES END-->
+
+
     <!--
 
       Client-side Javascript
@@ -108,9 +117,9 @@
           + Use a different preprocessor, like TypeScript
 
     -->
+
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
     <!--SCRIPTS END-->
-</body>
-
+  </body>
 </html>
