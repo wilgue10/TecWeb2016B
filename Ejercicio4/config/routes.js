@@ -38,9 +38,10 @@ module.exports.routes = {
     , 'get /ListarUsuarios': 'RutasController.listarUsuarios'
     , 'get /ListarHeros': 'RutasController.listarHeros'
     , 'get /EditarHero': 'RutasController.editarHero'
-    
-    , 'get /EditarUsuario': 'RutasController.editarUsuario'
     , 'get /CrearHero': 'RutasController.crearHero'
+    , 'get /CrearPoder   ': 'RutasController.crearPoder'
+    , 'get /ListarPoderes   ': 'RutasController.listarPoderes'
+    , 'get /EditarUsuario': 'RutasController.editarUsuario'
     , 'get /Error': 'RutasController.error'
         /***************************************************************************
          *                                                                          *

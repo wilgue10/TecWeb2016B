@@ -81,7 +81,6 @@ module.exports = {
 
         }
     },
-    
     error: function (req, res) {
         return res.view('vistas/Error', {
             error: {
@@ -126,10 +125,13 @@ module.exports = {
                     });
                 }
 
-                res.view('vistas/Hero/crearHero', {
+                res.view('vistas/Poder/listarPoderes', {
                     poderes: poderesEncontrados
                 });
             })
+    },
+    crearPoder: function (req, res) {
+        return res.view('vistas/Poder/crearPoder');
     },
     editarUsuario: function (req, res) {
 

@@ -196,11 +196,7 @@ module.exports = {
 
                 })
             
-            
-            
-            
-            
-
+           
         } else {
             return res.view('vistas/Error', {
                 error: {
