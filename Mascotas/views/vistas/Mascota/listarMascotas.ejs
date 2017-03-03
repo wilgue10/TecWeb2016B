@@ -1,0 +1,25 @@
+<div class="row">
+
+  <% for(var i=0; i<mascotas.length; i++){ %>
+
+  <div class="col-sm-4">
+    <h3 class="text-center"> <%=mascotas[i].nombre%></h3>
+    <h4 class="text-center"> Fecha de Nacimiento: <%=mascotas[i].fechaNacimiento.toLocaleString()%></h4>
+
+    <p class="text-center">
+      <%= mascotas[i].paisNacimiento %>
+    </p>
+    <p class="text-center">
+      <%= mascotas[i].idRaza.nombre %>
+    </p>
+    <a style="color:white" href="/Mascota/BorrarMascota?id=<%=mascotas[i].id%>">
+      <button class="btn btn-block btn-danger"> Borrar</button>
+    </a>
+    <br>
+    <a style="color:white" href="/EditarMascota?id=<%=mascotas[i].id%>">
+      <button class="btn btn-block btn-success"> Editar</button>
+    </a>
+  </div>
+  <%  } %>
+
+</div>

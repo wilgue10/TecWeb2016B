@@ -1,0 +1,37 @@
+<div style='background-color:white;color:black;'>
+
+  <h1>Editar Mascotas</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <form action="mascota/editarMascota" method="post">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input required type="text" class="form-control" placeholder="Nombre" name="nombre" value="<%= mascota.nombre %>">
+        </div>
+
+        <div class="form-group">
+          <label>Fecha Nacimiento</label>
+          <input type="text" disabled class="form-control" placeholder="Fecha Nacimiento" name="fechaNacimiento" value="<%= mascota.fechaNacimiento.toLocaleString()%>">
+        </div>
+
+        <div class="form-group">
+          <label>País de Nacimiento</label>
+          <input type="text" disabled class="form-control"  name="paisNacimiento" value="<%= mascota.paisNacimiento %>">
+        </div>
+        <input type="hidden" name="id" value="<%=mascota.id%>">
+        <button type="submit" class="btn btn-success">Editar Mascota</button>
+
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <h3 class="text-center"> ID: <%=mascota.id%> -  <%=mascota.nombre%></h3>
+      <h4 class="text-center"> Fecha de Nacimiento: <%=mascota.fechaNacimiento.toLocaleString()%></h4>
+      <p class="text-center">
+        <%= mascota.paisNacimiento %>
+      </p>
+    </div>
+  </div>
+
+
+</div>
