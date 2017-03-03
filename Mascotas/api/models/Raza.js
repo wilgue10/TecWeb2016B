@@ -11,7 +11,6 @@ module.exports = {
 
     nombre: {
       type: 'string',
-      enum: ['Bulldog', 'Chihuahua', 'Pitbull'],
       required: true,
       unique: true
     },
