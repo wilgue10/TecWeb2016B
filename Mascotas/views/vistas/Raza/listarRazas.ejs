@@ -3,7 +3,6 @@
   <% for(var i=0; i<razas.length; i++){ %>
   <div class="col-sm-4">
     <h3 class="text-center"> <%=razas[i].nombre%></h3>
-    <h3 class="text-center"> Peso: <%=razas[i].peso%> libras</h3>
     <a style="color:white" href="/Raza/BorrarRaza?id=<%=razas[i].id%>">
       <button class="btn btn-block btn-danger"> Borrar</button>
     </a>

@@ -11,10 +11,9 @@ module.exports = {
     var parametros = req.allParams();
 
     if (req.method == 'POST') {
-      if (parametros.nombre && parametros.peso) {
+      if (parametros.nombre) {
         Raza.create({
-          nombre: parametros.nombre,
-          peso: parametros.peso
+          nombre: parametros.nombre
         }).exec(function (error, razaCreada) {
           if (error) return res.view('error', {
             title: 'Error',
@@ -57,11 +56,11 @@ module.exports = {
 
     var parametros = req.allParams();
     if (req.method == 'POST') {
-      if (parametros.id) {
+      if (parametros.nombre) {
         Raza.update({
-          id: parametros.id
+          nombre: parametros.nombre
         }, {
-          peso: parametros.peso
+          
         }).exec(function (error) {
           if (error) {
             return res.view('error', {
